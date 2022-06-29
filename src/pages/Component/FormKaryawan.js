@@ -225,7 +225,7 @@ const FormKaryawan = () => {
 
       <div className="card mb-4" id="list-produk">
         <div className="card-body">
-          <h3 className="card-title">List Transaksi</h3>
+          <h3 className="card-title">List Karyawan</h3>
           <div className="table-responsive text-nowrap">
             <table className="table table-striped">
               <thead>
