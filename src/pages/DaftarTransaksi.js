@@ -35,6 +35,7 @@ const DaftarTransaksi = () => {
       response.data.data.map((item) => ({
         id: item.id,
         waktu_transaksi: item.created_at,
+        id_pelanggan: item.id_pelanggan,
         nama_pelanggan: item.pelanggan.nama,
         nomor_hp: item.pelanggan.nomor_hp,
         keluhan: item.keluhan,

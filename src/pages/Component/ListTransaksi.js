@@ -27,6 +27,7 @@ const ListTransaksi = (props) => {
               <thead>
                 <tr>
                   <th>ID Transaksi</th>
+                  <th>ID Pelanggan</th>
                   <th>Waktu Transaksi</th>
                   <th>Nama Pelanggan</th>
                   <th>Nomor HP</th>
@@ -41,6 +42,7 @@ const ListTransaksi = (props) => {
                 {props.data.map((item) => (
                   <tr key={item.id}>
                     <td>{item.id}</td>
+                    <td>{item.id_pelanggan}</td>
                     <td>{item.waktu_transaksi}</td>
                     <td>{item.nama_pelanggan}</td>
                     <td>{item.nomor_hp}</td>
