@@ -36,6 +36,7 @@ const DaftarTransaksi = () => {
         id: item.id,
         waktu_transaksi: item.created_at,
         nama_pelanggan: item.pelanggan.nama,
+        nomor_hp: item.pelanggan.nomor_hp,
         keluhan: item.keluhan,
         saran: item.saran,
         nama_obat: item.nama_obat,

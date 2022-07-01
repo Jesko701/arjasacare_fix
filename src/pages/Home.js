@@ -40,6 +40,7 @@ const Home = () => {
         arr.map((item) => ({
           id: item.id,
           nama: item.nama,
+          nomor_hp: item.nomor_hp
         }))
       );
 

@@ -29,6 +29,7 @@ const ListTransaksi = (props) => {
                   <th>ID Transaksi</th>
                   <th>Waktu Transaksi</th>
                   <th>Nama Pelanggan</th>
+                  <th>Nomor HP</th>
                   <th>Keluhan</th>
                   <th>Saran</th>
                   <th>Nama Obat</th>
@@ -42,6 +43,7 @@ const ListTransaksi = (props) => {
                     <td>{item.id}</td>
                     <td>{item.waktu_transaksi}</td>
                     <td>{item.nama_pelanggan}</td>
+                    <td>{item.nomor_hp}</td>
                     <td>{item.keluhan}</td>
                     <td>{item.saran}</td>
                     <td>{item.nama_obat}</td>

@@ -20,6 +20,7 @@ const ListPerson = (props) => {
                 <tr>
                   <th>Nomor</th>
                   <th>Nama</th>
+                  <th>Nomor HP</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
@@ -28,6 +29,7 @@ const ListPerson = (props) => {
                   <tr key={item.id}>
                     <td>{(props.page - 1) * 10 + (index + 1)}</td>
                     <td>{item.nama}</td>
+                    <td>{item.nomor_hp}</td>
                     <td>
                       <button
                         className="btn btn-info"
