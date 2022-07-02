@@ -19,6 +19,7 @@ const ListPerson = (props) => {
               <thead>
                 <tr>
                   <th>Nomor</th>
+                  <th>ID Pelanggan</th>
                   <th>Nama</th>
                   <th>Nomor HP</th>
                   <th>Aksi</th>
@@ -28,6 +29,7 @@ const ListPerson = (props) => {
                 {props.pelanggan.map((item, index) => (
                   <tr key={item.id}>
                     <td>{(props.page - 1) * 10 + (index + 1)}</td>
+                    <td>{item.id}</td>
                     <td>{item.nama}</td>
                     <td>{item.nomor_hp}</td>
                     <td>
