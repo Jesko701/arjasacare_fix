@@ -26,6 +26,7 @@ const ListTransaksi = (props) => {
             <table className="table table-striped">
               <thead>
                 <tr>
+                  <th>Nomor</th>
                   <th>ID Transaksi</th>
                   <th>ID Pelanggan</th>
                   <th>Waktu Transaksi</th>
@@ -39,8 +40,9 @@ const ListTransaksi = (props) => {
                 </tr>
               </thead>
               <tbody className="table-border-bottom-0">
-                {props.data.map((item) => (
+                {props.data.map((item, nomor) => (
                   <tr key={item.id}>
+                    <td>{nomor+1}</td>
                     <td>{item.id}</td>
                     <td>{item.id_pelanggan}</td>
                     <td>{item.waktu_transaksi}</td>
